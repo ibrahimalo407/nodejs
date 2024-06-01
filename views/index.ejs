@@ -1,0 +1,7 @@
+<!-- views/index.ejs -->
+<h1>Liste des étudiants</h1>
+<ul>
+  <% students.forEach(student => { %>
+    <li><%= student.first_name %> <%= student.last_name %> - <%= student.email %> - <%= student.phone %></li>
+  <% }) %>
+</ul>

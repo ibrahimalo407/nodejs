@@ -1,0 +1,7 @@
+<!-- views/show.ejs -->
+<h1>Détails de l'étudiant</h1>
+<p><strong>Prénom:</strong> <%= student.first_name %></p>
+<p><strong>Nom:</strong> <%= student.last_name %></p>
+<p><strong>Email:</strong> <%= student.email %></p>
+<p><strong>Téléphone:</strong> <%= student.phone %></p>
+<a href="/students/<%= student.id %>/edit">Modifier</a>

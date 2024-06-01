@@ -1,0 +1,14 @@
+<!-- views/edit.ejs -->
+<h1>Modifier un étudiant</h1>
+<form action="/students/<%= student.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  <label for="first_name">Prénom:</label>
+  <input type="text" id="first_name" name="first_name" value="<%= student.first_name %>">
+  <label for="last_name">Nom:</label>
+  <input type="text" id="last_name" name="last_name" value="<%= student.last_name %>">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" value="<%= student.email %>">
+  <label for="phone">Téléphone:</label>
+  <input type="text" id="phone" name="phone" value="<%= student.phone %>">
+  <button type="submit">Mettre à jour</button>
+</form>
